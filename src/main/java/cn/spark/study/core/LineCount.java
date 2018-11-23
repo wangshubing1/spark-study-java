@@ -26,7 +26,7 @@ public class LineCount {
         JavaSparkContext sc = new JavaSparkContext(conf);
 
         // 创建初始RDD，lines，每个元素是一行文本
-        JavaRDD<String> lines = sc.textFile("C://Users//Administrator//Desktop//hello.txt");
+        JavaRDD<String> lines = sc.textFile("E:\\Git\\spark-study-scala\\file\\data\\wc2");
 
         // 对lines RDD执行mapToPair算子，将每一行映射为(line, 1)的这种key-value对的格式
         // 然后后面才能统计每一行出现的次数

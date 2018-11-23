@@ -10,7 +10,7 @@ import org.apache.spark.api.java.function.Function2;
  * 使用HDFS文件创建RDD
  * 案例：统计文本文件字数
  *
- * @author Administrator
+ * @author king
  */
 public class HDFSFile {
 

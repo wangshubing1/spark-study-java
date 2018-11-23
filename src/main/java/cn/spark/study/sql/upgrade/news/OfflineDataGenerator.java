@@ -56,11 +56,11 @@ public class OfflineDataGenerator {
 			// 生成固定的行为，view
 			String action = "view"; 
 			 
-			buffer.append(date).append("")  
-					.append(timestamp).append("")
-					.append(userid).append("")
-					.append(pageid).append("")
-					.append(section).append("")
+			buffer.append(date).append("\001")
+					.append(timestamp).append("\001")
+					.append(userid).append("\001")
+					.append(pageid).append("\001")
+					.append(section).append("\001")
 					.append(action).append("\n");
 		}
 		
@@ -92,7 +92,7 @@ public class OfflineDataGenerator {
 		PrintWriter pw = null;  
 		try {
 			pw = new PrintWriter(new OutputStreamWriter(
-					new FileOutputStream("C:\\Users\\Administrator\\Desktop\\access.log")));
+					new FileOutputStream("E:\\Git\\spark-study-java\\data\\access.log")));
 			pw.write(buffer.toString());  
 		} catch (Exception e) {
 			e.printStackTrace();
